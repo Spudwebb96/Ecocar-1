@@ -27,6 +27,9 @@
                 <li><img src="../ecocar/ecocar/ICON/e-commerce-search.svg" alt="icon loupe" class="Iconav" ></li>
                 <li><img src="../ecocar/ecocar/ICON/store.svg" alt="icon store" class="Iconav" ></li>
             </ul>
+            <div class="burger"></div>
+            <div class="burger"></div>
+            <div class="burger"></div>
         </div>
         </nav>
         </header>
@@ -47,16 +50,22 @@
             <li>Autopilot</li>
             <li>Tow Hitch</li>
             <li>1-Year Premium Connectivity Trial </li>
-            <li>More Details</li>
+            <div>
+            <div class="plus">+</div>    
+            <li class="details">More Details</li>
+            </div>
         </ul>
         <div class="imgcarachat" >
             <img src="../ecocar/ecocar/Image/Voiture/iris3.png" alt="image voiture">
         </div>
         <div class="empty"></div>
         <div class="rectbouton">
-            <input class="cash" type="button" value="Cash">
-            <input class="cash" type="button" value="Lease">
-            <input class="cash" type="button" value="Loan">
+            <button onclick="colorchange(this.id)" class="cash" id="Cash" value="Cash">Cash</button>
+            <button onclick="colorchange(this.id)" class="cash" id="Lease" value="Lease">Lease</button>
+            <button onclick="colorchange(this.id)" class="cash" id="Loan" value="Loan">Loan</button>
+            <!-- <button type="color" id="head" name="head" value="#ffffff"> 
+            <button onclick="PlusHaut()" id="Higher">Higher !</button> -->
+
         </div>     
         <div class="empty"></div>
         <div class="stline">
@@ -69,10 +78,10 @@
         </div>
         <div class="ndline">
             <div class="price">
-                <span>$ 50,767</span>
+                <span>$50,767</span>
             </div>
-            <div class="today">
-                <span>$ 1000</span>
+            <div class="price">
+                <span>$1000</span>
             </div>
         </div>
         <div class="rectcommande">
@@ -82,6 +91,6 @@
             <span>Commander par virement bancaire</span>
         </div>
     </main> 
-
+    <script type src="../ecocar/ecocar/js/panierachat.js"></script>
 </body>
 </html>
